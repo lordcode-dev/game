@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flagle — Guess the Flag</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🌍 Flagle</h1>
+  <p>Guess the 5 daily flags</p>
+</header>
+
+<main>
+  <img id="flag" alt="flag">
+
+  <div class="controls">
+    <input id="guess" placeholder="Enter country name">
+    <button id="submit">Guess</button>
+  </div>
+
+  <p id="message"></p>
+  <p id="progress"></p>
+
+  <button id="next" class="hidden">Next Flag</button>
+
+  <div class="ad">AdSense Banner</div>
+</main>
+
+<footer>
+  <p id="reset"></p>
+</footer>
+
+<script src="flags.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
