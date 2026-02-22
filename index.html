@@ -1,43 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Flagle — Guess the Flag</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagle – Daily Flag Game</title>
+
+<meta name="description" content="Play Flagle, the daily flag guessing game. New flags every day.">
+<meta name="robots" content="index, follow">
+<meta name="google-adsense-account" content="ca-pub-5647919698621450">
+
 <link rel="stylesheet" href="style.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5647919698621450"
-     crossorigin="anonymous"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5647919698621450" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+<nav class="nav">
+<a href="/">Game</a>
+<a href="/about.html">About</a>
+<a href="/privacy.html">Privacy</a>
+<a href="/terms.html">Terms</a>
+<a href="/contact.html">Contact</a>
+</nav>
+
 <header>
-  <h1>🌍 Flagle</h1>
-  <p>Guess the 5 daily flags</p>
+<h1>🌍 Flagle</h1>
+<p>Guess 5 flags every day</p>
 </header>
 
 <main>
-  <img id="flag" alt="flag">
 
-  <div class="controls">
-    <input id="guess" placeholder="Enter country name">
-    <button id="submit">Guess</button>
-  </div>
+<img id="flag" alt="flag">
 
-  <p id="message"></p>
-  <p id="progress"></p>
+<div>
+<input id="guess" placeholder="Country name">
+<button id="submit">Guess</button>
+</div>
 
-  <button id="next" class="hidden">Next Flag</button>
+<p id="message"></p>
+<p id="progress"></p>
+<p id="streak"></p>
 
-  <div class="ad">AdSense Banner</div>
+<button id="next" class="hidden">Next</button>
+<button id="share" class="hidden">Share Score</button>
+
+<div class="ad">               </div>
+
 </main>
 
 <footer>
-  <p id="reset"></p>
+<p id="reset"></p>
 </footer>
 
 <script src="flags.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
